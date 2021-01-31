@@ -5,11 +5,14 @@ import "../node_modules/font-awesome/css/font-awesome.min.css";
 import "./App.css";
 import { Redirect, Route, Switch } from 'react-router-dom';
 import HomeContainer from './containers/HomeContainer';
+import  HeaderContainer from './containers/HeaderContainer';
+ 
 
 
 const App = () =>{
   return(
     <React.Fragment>
+      <HeaderContainer />
       <HomeContainer />
     </React.Fragment>
   );

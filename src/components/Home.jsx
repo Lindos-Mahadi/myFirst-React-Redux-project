@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+
 const Home = (props) =>{
 console.warn("home", props.data);
     return (
@@ -27,15 +28,6 @@ console.warn("home", props.data);
                             <button 
                             onClick={()=>props.addToCartHandler({price: 1000, name : 'I-phone'})} 
                             className="btn btn-primary ">Add To Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-6">
-                        <div className="row">
-                            <div className="col-4 col-lg-4"></div>
-                            <div className="col-4 col-lg-4"></div>
-                            <div className="col-4 col-lg-4">
-                                <span>{props.data.length}<AddShoppingCartIcon  /></span>
                             </div>
                         </div>
                     </div>
